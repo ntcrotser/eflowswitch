@@ -1,0 +1,7 @@
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+RELAIS_1_GPIO = 23
+GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+GPIO.output(RELAIS_1_GPIO, GPIO.LOW)
